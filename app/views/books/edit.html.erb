@@ -1,13 +1,29 @@
-<h1>編集画面</h1>
+<h1>Edting Book</h1>
 
-<%= form_with model: @book do |f| %>
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
 
-<h4>editタイトル</h4>
-<%= f.text_field :title %>
+<div class="label_G">
+  <label>
+    <div class="t_title">Title</a><br>
+    <%= f.text_field :title %><br>
+  </label>
+</div>
 
-<h4>edit本文</h4>
-<%= f.text_area :body %>
+<div class="label_G">
+  <label>
+    Body<br>
+    <%= f.text_area :body %><br>
+  </label>
+</div>
 
-<%= f.submit '保存' %>
+<div class="create_bt">
+  <%= f.submit 'Update Book' %>
+</div>
 
 <% end %>
+
+<%= link_to "Show", "/books/#{@book.id}", class: "show_#{@book.id}" %>
+
+|
+
+<%= link_to "Back", "/books" %>

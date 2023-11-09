@@ -1,5 +1,15 @@
-<h2>Showタイトル</h2>
-<p><%= @book.title %><p>
+<p>
+  <strong>Title:</strong><%= @book.title %>
+</p>
 
-<h2>Show本文</h2>
-<p><%= @book.body %></P>
+<p>
+  <strong>Body:</strong><%= @book.body %>
+</P>
+
+<%= link_to "Edit", "/books/#{@book.id}/edit", class: "edit_#{@book.id}"%>
+
+|
+
+<%= link_to "Back", "/books" %>
+
+

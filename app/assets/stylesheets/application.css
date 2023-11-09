@@ -20,6 +20,7 @@
 }
 
 body {
+  color: #333333;
   font-size: 13px;
   font-family: verdana, arial,helvetica,sans-serif;
   background-color: #ffffff;
@@ -28,8 +29,41 @@ body {
 
 h1 {
   margin: 17.42px 0px ;
+  line-height: 18px;
 }
 
-p {
+h2 {
+  margin: 16.185px 0px;
+}
+
+
+
+p, td {
   margin: 33px;
 }
+
+th {
+  padding: 1px 1px 5px 1px;
+}
+
+td {
+  padding: 1px 5px 7px 5px;
+}
+
+a {
+  text-decoration: underline;
+  color: #000000;
+}
+
+a:visited {
+  color: #666666;
+}
+
+.label_G {
+  margin-bottom: 10px;
+}
+
+.create_bt {
+  margin-bottom: 10px;
+}
+
