@@ -18,17 +18,14 @@
           <p><%= book.body %></p>
         </td>
         <td>
-          <span>
-          <%= link_to "show", "/books/#{book.id}" %>
-          </span>
-
+          <%= link_to "Show", "/books/#{book.id}", class: "show_#{book.id}" %>
         </td>
         <td>
-          <a class="">Edit</a>
-          </td>
+          <%= link_to "Edit", "/books/#{book.id}/edit", class: "edit_#{book.id}" %>
+        </td>
         <td>
-          <a class="">Destroy</a>
-          </td>
+          <%= link_to "Destroy", "/books/#{book.id}", method: :delete, "data-confirm" => "Are you sure?", class: "destroy_#{book.id}" %>
+        </td>
       </tr>
     <% end %>
   </tbody>
