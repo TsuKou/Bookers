@@ -19,11 +19,17 @@
   box-sizing: border-box;
 }
 
+.flnoti {
+  color: #008000;
+  margin: 33px;
+}
+
 body {
   color: #333333;
   font-size: 13px;
   font-family: verdana, arial,helvetica,sans-serif;
   background-color: #ffffff;
+  line-height: 18px;
   margin: 33px;
 }
 
@@ -34,9 +40,8 @@ h1 {
 
 h2 {
   margin: 16.185px 0px;
+  line-height: 18px;
 }
-
-
 
 p, td {
   margin: 33px;
@@ -61,6 +66,16 @@ a:visited {
 
 .label_G {
   margin-bottom: 10px;
+}
+
+.book_t {
+  padding: 1px 2px;
+}
+
+.book_b {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 2px;
 }
 
 .create_bt {

@@ -32,23 +32,28 @@
   </tbody>
 </table>
 
-<h2>New book</h2>
-  <%= form_with model: @book, method: :post do |f| %>
-  <div class="label_G">
-    <label>
-      Title<br>
-      <%= f.text_field :title %><br>
-    </label>
-  </div>
+<div class="New book">
+  <h2>New book</h2>
+    <div class="error_box">
 
-  <div class="label_G">
-    <label>
-      body<br>
-      <%= f.text_area :body %><br>
-    </label>
-  </div>
 
-  <div class="create_bt">
-    <%= f.submit 'Create Book' %>
-  </div>
-<% end %>
+    </div>
+
+
+
+    <%= form_with model: @book, method: :post do |f| %>
+    <div class="label_G">
+      <label for="book_title">Title</label><br>
+      <input class="book_title" type="text" name="book[title]" id="book_title" >
+    </div>
+
+    <div class="label_G">
+      <label for="book_body">Body</label><br>
+      <textarea class="book_body" name="book[body]" id="book_body" ></textarea>
+    </div>
+
+    <div class="create_bt">
+      <%= f.submit 'Create Book' %>
+    </div>
+    <% end %>
+</div>
