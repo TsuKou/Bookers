@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bookers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
   <body>
     <h1>
     ようこそ
@@ -22,8 +12,8 @@
     では、さまざまな書籍に関するあなたの意見や</P>
     <p>印象を共有し交換することが出来ます。</p>
 
-    <p><%= link_to "start" , "books" %></p>
-    
+    <%= link_to 'start' , books_path %>
+
 
     <%= yield %>
   </body>
