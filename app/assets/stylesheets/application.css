@@ -72,6 +72,14 @@ a:visited {
   padding: 1px 2px;
 }
 
+.book_title {
+  padding: 1px 2px;
+}
+
+.book_body {
+  padding: 2px;
+}
+
 .book_b {
   color: #000000;
   background-color: #ffffff;
@@ -81,4 +89,35 @@ a:visited {
 .create_bt {
   margin-bottom: 10px;
 }
+
+.error_box {
+  width: 468px;
+  background-color: #f0f0f0;
+  border: 2px solid #ff0000;
+  margin-bottom: 20px;
+  padding: 7px;
+  padding-bottom: 0px;
+}
+
+.error_box h2 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px 5px 15px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #cc0000;
+  color: #ffffff;
+}
+  ul {
+  margin: 33px;
+  padding: 0px 0px 0px 40px;
+}
+  
+  ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
 
